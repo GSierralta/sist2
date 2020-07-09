@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "usuarios",
+  "info": {
+    "name": "Usuario"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "private": false,
+      "required": true
+    },
+    "apellido": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "contrasena": {
+      "type": "password",
+      "private": true,
+      "required": true
+    },
+    "informacion": {
+      "model": "informacion",
+      "via": "usuarios"
+    },
+    "reservacions": {
+      "collection": "reservacion",
+      "via": "usuario"
+    }
+  }
+}

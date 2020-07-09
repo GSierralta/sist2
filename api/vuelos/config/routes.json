@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vuelos",
+      "handler": "vuelos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vuelos/count",
+      "handler": "vuelos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vuelos/:id",
+      "handler": "vuelos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vuelos",
+      "handler": "vuelos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vuelos/:id",
+      "handler": "vuelos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vuelos/:id",
+      "handler": "vuelos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

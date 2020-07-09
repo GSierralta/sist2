@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "informacion_s",
+  "info": {
+    "name": "información "
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "clima": {
+      "type": "string"
+    },
+    "avisos": {
+      "type": "string"
+    },
+    "temperatura": {
+      "type": "integer"
+    },
+    "vuelos": {
+      "collection": "vuelos",
+      "via": "informacion"
+    },
+    "usuarios": {
+      "via": "informacion",
+      "collection": "usuario"
+    }
+  }
+}

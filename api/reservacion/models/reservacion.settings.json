@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservacions",
+  "info": {
+    "name": "reservación"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "codigo_reservacion": {
+      "type": "string"
+    },
+    "usuario": {
+      "via": "reservacions",
+      "model": "usuario"
+    },
+    "vuelo": {
+      "model": "vuelos",
+      "via": "reservacions"
+    }
+  }
+}

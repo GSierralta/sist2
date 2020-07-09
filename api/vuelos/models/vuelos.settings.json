@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vuelos",
+  "info": {
+    "name": "vuelos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre_aerolinea": {
+      "type": "string"
+    },
+    "vuelo": {
+      "type": "string"
+    },
+    "destino": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "float"
+    },
+    "puestos": {
+      "type": "integer"
+    },
+    "hora_de_inicio": {
+      "type": "datetime"
+    },
+    "hora_final": {
+      "type": "datetime"
+    },
+    "reservacions": {
+      "via": "vuelo",
+      "collection": "reservacion"
+    },
+    "informacion": {
+      "via": "vuelos",
+      "model": "informacion"
+    }
+  }
+}

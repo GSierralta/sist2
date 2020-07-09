@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/informacions",
+      "handler": "informacion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/informacions/count",
+      "handler": "informacion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/informacions/:id",
+      "handler": "informacion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/informacions",
+      "handler": "informacion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/informacions/:id",
+      "handler": "informacion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/informacions/:id",
+      "handler": "informacion.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
