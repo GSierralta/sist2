@@ -13,12 +13,25 @@
       "type": "string"
     },
     "usuario": {
-      "via": "reservacions",
-      "model": "usuario"
+      "model": "usuario",
+      "via": "reservacions"
     },
     "vuelo": {
       "model": "vuelos",
       "via": "reservacions"
+    },
+    "cant_de_asientos": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "Forma_de_pago": {
+      "type": "string",
+      "required": true
+    },
+    "Domicilio": {
+      "type": "text",
+      "required": true
     }
   }
 }

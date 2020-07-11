@@ -24,7 +24,7 @@
     },
     "contrasena": {
       "type": "password",
-      "private": true,
+      "private": false,
       "required": true
     },
     "informacion": {
@@ -32,8 +32,8 @@
       "via": "usuarios"
     },
     "reservacions": {
-      "collection": "reservacion",
-      "via": "usuario"
+      "via": "usuario",
+      "collection": "reservacion"
     }
   }
 }
